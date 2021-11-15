@@ -1,0 +1,31 @@
+# Antey wix lopala wix adds run cheyyakunda vundataniki and nee own own domain tho ravadaniki business and pro theseskuntey saripothadi kadha?
+# a: yes 3,500 amount to this ok.
+
+# Am Theme theeskunnado cheppu? and ha theme antha cost ayyindho adhi kuuda cheppu ok?
+# a: ok cheptha. Unlimited templates to you choose any one and make it looking
+
+# Dropdown menus lopala correct design ledhu ok?
+# a: ok Easy.
+
+
+# Actually in the footer it was not properly i need to write the code ani cheppu ok?
+# a: ok Cheptha. Cheppi Oka demo website chupettu chupetti alaga vachetattu chesta ani cheppi silence ga vundu.
+
+# Contact Us not working correctly not only contactUs konni verey pages kuuda work avvatlevu i can make it 
+
+# logo color voilet manchiga use cheyyu nuvvu attractive ga theesukuvachetappudu ok?
+# a: ok chsta.
+
+# Lot's of changes there into website ani cheppu inkokkati anti antey sir memu website ki 13k theeskuntamu sir ok?
+# a: Ok. adugutha. annimanchiga explin chesi cheptham
+
+
+# https://datacoast.in/ website chupettu alaga chestam sir ok?
+# a: ok adugutha. sir mee daggara inka videos images amaina vuntey send cheyandi ani adugu ok.
+
+# Inka Do you have any samples antey meeku elane kavali anedi kuuda meeru ippude cheppandi okkasari confirm ga antey next sir charges shoud be around 15,000 but we will charge to you 12,000 is it ok  for you ?
+# a: No anu  thakkuva chepthey.  
+
+updateStudentData(id:number,data:any){
+  return this.http.put(`${this.url}/${id}`,data);
+}

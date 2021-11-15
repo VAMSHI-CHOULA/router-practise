@@ -1,0 +1,51 @@
+<h3>add-student works!</h3>
+<form [formGroup]="loginForm" (ngSubmit)="saveData()">
+   <div class="mb-3">
+     <label  class="form-label">Title*</label>
+     <input type="text" class="form-control" formControlName="title" placeholder="Enter Title">
+   <span *ngIf="title && title.touched && title.invalid">Please Enter valid details</span>
+    </div>
+   <div class="mb-3">
+      <label  class="form-label">Author*</label>
+      <input type="text" class="form-control" formControlName="author" placeholder="Enter Author">
+      <span *ngIf="author && author.touched && author.invalid">Please Enter valid details</span>
+    </div>
+   <button [disabled]="loginForm.invalid" class="btn btn-primary">Add</button>
+ </form>
+<!--<div class="container">
+       <form #studentForm="ngForm">
+           <div class="form-group"> 
+               <label >Student Name</label>
+               <input type="text" required #studentName=ngModel  name="studentName" [(ngModel)]="student1.studentName" class="form-control">
+           </div>
+           <div class="container alert alert-danger" required pattern="[A-Za-z]{6}" *ngIf="studentName.invalid">
+             student Name is wrong
+          </div>
+          {{studentName.invalid}}
+           <div class="form-group">
+                   <label>Email</label>
+                   <input type="email" required #studentEmail=ngModel name="studentEmail" [(ngModel)]="student1.studentEmail" class="form-control"  >
+           </div>
+           <div class="alert alert-danger" *ngIf="studentEmail.invalid">Email is required</div>
+           <select class="form-select form-select-lg " name="subject" [(ngModel)]="student1.subject" (custom)="validation(value)">
+            <option selected>Open this select menu</option>
+             <option  *ngFor="let subject of subjects">{{subject}}</option>
+           </select>
+           <br>
+           <div class="form-group">
+             <label for="">Gender:</label>&nbsp;&nbsp;
+             <input type="radio" #gender [(ngModel)]="student1.gender" name="gender" value="M" />Male
+              <input type="radio" [(ngModel)]="student1.gender" name="gender" value="F" />Female
+            </div>
+            {{gender.className}}
+            <div class="form-group">
+               <label>Cities:</label>&nbsp;&nbsp;
+              <input type="checkbox" name="hyderabad" #city1 [(ngModel)]=student1.city1 value="hyd">Hyderabad
+              <input type="checkbox" name="bangalore" #city2 [(ngModel)]=student1.city2 value="ban">Bangalore
+              <input type="checkbox" name="mumbai" #city3 [(ngModel)]=student1.city3 value="mum">Mumbai
+            </div>
+           <br>
+           <br>
+            <button class="btn btn-primary" type="submit" >Submit</button>
+       </form>
+ </div>-->

@@ -1,0 +1,13 @@
+<form [formGroup]="editStudent" (ngSubmit)="updateData()">
+    <div class="mb-3">
+      <label  class="form-label">Title*</label>
+      <input type="text" class="form-control" formControlName="title" placeholder="Enter Title">
+    <span *ngIf="title && title.touched && title.invalid">Please Enter valid details</span>
+     </div>
+    <div class="mb-3">
+       <label  class="form-label">Author*</label>
+       <input type="text" class="form-control" formControlName="author" placeholder="Enter Author">
+       <span *ngIf="author && author.touched && author.invalid">Please Enter valid details</span>
+     </div>
+    <button [disabled]="editStudent.invalid" class="btn btn-primary">Update</button>
+  </form>
