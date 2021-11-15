@@ -32,6 +32,4 @@ export class AddStudentComponent implements OnInit {
   }
   ngOnInit(): void {
   }
- /*subjects=["Hindi","English","Telugu"]
-  student1=new Students("Vamshi12","vamshi12@gmail.com","English","F",true, true, false);*/
 }

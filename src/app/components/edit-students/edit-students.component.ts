@@ -8,11 +8,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./edit-students.component.css']
 })
 export class EditStudentsComponent implements OnInit {
+  mynumber=123;
   constructor(private student:StudentsService, private router:ActivatedRoute) { }
   editStudent= new FormGroup({
     title:new FormControl('',[Validators.required]),
     author:new FormControl('',[Validators.required])
     });
+
     updateData(){
       this.student.updateStudentData(this.router.snapshot.params.id, this.editStudent.value).subscribe((result)=>{
         console.log(result);
